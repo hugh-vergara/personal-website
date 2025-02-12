@@ -1,9 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Web from '../components/Web.astro';
+import Tools from "../components/Tools.astro";
+import Hosting from "../components/Hosting.astro";
+import Database from "../components/Database.astro";
+import Programming from "../components/Programming.astro";
 ---
 <Layout>
 
 <body class="container py-4">
+
+	<Header></Header>
 
 	<div class="d-flex">
 		<div>
@@ -43,8 +51,36 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</div>
 
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
 
-	<button class="btn btn-primary">Hello Bootstrap</button>
 
+	<div class="mt-5">
+		<div><h3>About Me</h3></div>
+		<div><p>These are the technologies I worked with</p></div>
+	</div>
+
+	<Web></Web>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+
+	<Programming></Programming>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	
+	<Tools></Tools>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+
+	<Hosting></Hosting>
 	</body>
+
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	<div class="pt-5"></div>
+	<Database></Database>
 </Layout>

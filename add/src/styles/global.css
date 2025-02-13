@@ -45,10 +45,12 @@ header {
 
 /* Underline hover effect */
 a {
+    color: black; /* Ensures text is black */
     position: relative;
-    text-decoration: none;
-    font-weight: normal !important;
+    text-decoration: none; /* Fixes incorrect value */
 }
+
+
 
 a:hover {
     text-decoration: none;
@@ -79,6 +81,7 @@ body {
     /*background-repeat: no-repeat;*/
     /*background-position: center center;*/
     /*background-size: cover;*/
+    background-color: #F2F0EF;
 }
 
 

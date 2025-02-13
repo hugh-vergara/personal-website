@@ -174,9 +174,7 @@ const repos = await response.json();
 
 <!-- Main Content -->
 <div class="container">
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
+
     <h1 >My Top Repositories</h1>
     <p>
         This is my top repositories that reflect my skills. These projects showcase my expertise in various
@@ -184,11 +182,7 @@ const repos = await response.json();
         applications, efficient algorithms, and clean code practices. Feel free to explore them to see my work,
         contributions, and coding style in action.
     </p>
-
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-
+    
     {repos.length === 0 ? (
             <p class="text-center">No repositories found.</p>
     ) : (

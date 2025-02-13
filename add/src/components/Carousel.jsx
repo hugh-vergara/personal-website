@@ -3,8 +3,8 @@ import { useState, useEffect } from 'preact/hooks';
 
 const titles = [
     "a Programmer",
-    "a Developer",
     "a Front-end Developer",
+    "a Data Scientist",
     "a Backend Developer",
     "an Artist"
 ];

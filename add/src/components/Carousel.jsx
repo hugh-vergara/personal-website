@@ -2,11 +2,11 @@ import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 
 const titles = [
-    "Programmer",
-    "Developer",
-    "Front-end Developer",
-    "Backend Developer",
-    "Artist"
+    "a Programmer",
+    "a Developer",
+    "a Front-end Developer",
+    "a Backend Developer",
+    "an Artist"
 ];
 
 const Carousel = () => {

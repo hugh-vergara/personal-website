@@ -13,101 +13,94 @@ import Carousel from "../components/Carousel.jsx";
 
 
 
-<Layout>
+   <Layout>
 
-	<div class="container mx-auto" style="max-width: 1500px; padding-top: 80px; padding-bottom: 80px; padding-left: 20%;">
+		<Header></Header>
+	   <div class="pt-5"></div>
+	   <div class="pt-5"></div>
+	   <div class="pt-5"></div>
 
+	   <div class="d-flex flex-column align-items-center text-center">
+		   <h3>Hi, I'm Hugh Mclude L. Vergara</h3>
+		   <Carousel client:load />
+		   <p>A Web Developer in the Philippines 🇵🇭</p>
+	   </div>
 
-	<Header></Header>
-
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="d-flex">
-		<div>
-			<h3> Hi I'm Hugh Mclude L. Vergara </h3>
-			<Carousel client:load />
-			<p>A Web Developer in the Philippines 🇵🇭</p>
-		</div>
-
-	</div>
-
-	<div class="d-flex flex-wrap align-items-center justify-content-start" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px;">
-
-		<!-- Text Content -->
-		<div class="mt-4" style="max-width: 500px;">
-			<p>
-				A BS-Computer Science student at the University of San Jose - Recoletos - proficient in Web Development and Artificial Intelligence.
-				I have experience working with modern frameworks and tools, focusing on building efficient and scalable applications.
-				Passionate about solving complex problems, I continuously explore advancements in AI and web technologies.
-			</p>
-			<p class="pt-5">Passionate about coding minimalist websites</p>
-			<a id="cvHover" href="https://drive.google.com/file/d/1iBSE7Evpk3Uotp3rCfQNLlt3c_8kzgPA/view?usp=sharing" target="_blank" style="text-decoration: none;">
-				<button class="btn" style="background-color: black; color: white; font-weight: bold; border-radius: 8px;">
-					View CV <i class="bi bi-file-earmark-text"></i>
-				</button>
-			</a>
-
-
-		</div>
-
-		<!-- Image Circle -->
-		<div class="outer-circle" style="display: flex; align-items: center;">
-			<div class="circle-div" style="
-            width: 200px;
-            height: 200px;
+	   <div class="d-flex align-items-center justify-content-center mt-3"> <!-- Reduce spacing -->
+		   <!-- Image Circle -->
+		   <div class="outer-circle d-flex align-items-center">
+			   <div class="circle-div" style="
+            width: 180px;  /* Reduce from 200px */
+            height: 180px;
             border-radius: 50%;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: #f8f9fa;">
-				<img src="/me.jpg" alt="Big Chungus" class="img-fluid" style="
+				   <img src="/me.jpg" alt="Profile Image" class="img-fluid" style="
                 width: 100%;
                 height: 100%;
                 object-fit: cover;">
+			   </div>
+		   </div>
+	   </div>
+
+	   <div class="d-flex flex-column align-items-center text-center mt-3"> <!-- Reduce spacing -->
+		   <!-- Text Content -->
+		   <div style="max-width: 500px;">
+			   <p>
+				   A BS-Computer Science student at the University of San Jose - Recoletos - proficient in Web Development and Artificial Intelligence.
+				   I have experience working with modern frameworks and tools, focusing on building efficient and scalable applications.
+				   Passionate about solving complex problems, I continuously explore advancements in AI and web technologies.
+			   </p>
+			   <p class="pt-3">Passionate about coding minimalist websites</p> <!-- Reduce from pt-5 -->
+		   </div>
+
+		   <!-- CV Button -->
+		   <div class="mt-3"> <!-- Reduce from mt-4 -->
+			   <a id="cvHover" href="https://drive.google.com/file/d/1iBSE7Evpk3Uotp3rCfQNLlt3c_8kzgPA/view?usp=sharing" target="_blank" style="text-decoration: none;">
+				   <button class="btn" style="background-color: black; color: white; font-weight: bold; border-radius: 8px;">
+					   View CV <i class="bi bi-file-earmark-text"></i>
+				   </button>
+			   </a>
+		   </div>
+	   </div>
+
+
+	   <div class="container mx-auto px-3 px-md-5 px-lg-5" style="max-width: 1200px;">
+
+			<div class="pt-5">
+				<div><h3>About Me</h3></div>
+				<div><p>These are the technologies I worked with</p></div>
 			</div>
-		</div>
-	</div>
 
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
+			<Web></Web>
 
 
-	<div class="mt-5">
-		<div><h3>About Me</h3></div>
-		<div><p>These are the technologies I worked with</p></div>
-	</div>
+			<Programming></Programming>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
 
-	<Web></Web>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
+			<Tools></Tools>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
 
-	<Programming></Programming>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
+			<Hosting></Hosting>
 
-	<Tools></Tools>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
+			<Database></Database>
 
-	<Hosting></Hosting>
-
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<Database></Database>
-
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	<div class="pt-5"></div>
-	</div>
-	</Layout>
-	<Footer></Footer>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
+			<div class="pt-5"></div>
+	   </div>
+   </Layout>
+<Footer></Footer>
 
 
 

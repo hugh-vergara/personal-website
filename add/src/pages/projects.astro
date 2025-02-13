@@ -19,10 +19,8 @@ const repos = await response.json();
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            //background-image: url("../../public/pbg.jpg");
-            //background-repeat: no-repeat;
-            //background-position: center center;
-            //background-size: cover;
+            background-color: #d2b48c;
+            background-image: linear-gradient(315deg, #d2b48c 0%, #f5deb3 74%);
         }
 
         /* Fixed header */
@@ -164,7 +162,7 @@ const repos = await response.json();
 <body>
 
 <!-- Fixed Header -->
-<header >
+<header class="opacity-50" >
     <div class="nav-container">
         <a href="/" class="active">Home</a>
         <a href="/projects">Projects</a>

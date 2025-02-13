@@ -1,4 +1,5 @@
 ---
+import 'bootstrap/dist/css/bootstrap.css';
 const response = await fetch("https://api.github.com/users/hugh-vergara/repos");
 const repos = await response.json();
 ---
@@ -12,11 +13,15 @@ const repos = await response.json();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body {
-            background: #f8f9fa;
+
             color: #212529;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url("../../public/pbg.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
         }
 
         /* Fixed header */
@@ -121,7 +126,7 @@ const repos = await response.json();
 <body>
 
 <!-- Fixed Header -->
-<header>
+<header class="opacity-75">
     <div class="nav-container">
         <a href="/" class="active">Home</a>
         <a href="/projects">Projects</a>
@@ -134,7 +139,7 @@ const repos = await response.json();
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
-    <h1 class="text-center">My Top Repositories</h1>
+    <h1 >My Top Repositories</h1>
     <p>
         This is my top repositories that reflect my skills. These projects showcase my expertise in various
         technologies, problem-solving abilities, and passion for coding. Each repository represents real-world

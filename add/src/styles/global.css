@@ -4,6 +4,37 @@
     text-decoration-color: blue;
 }
 
+
+
+#cvHover {
+    position: relative;
+    text-decoration: none;
+    font-weight: normal !important;
+}
+
+#cvHover:hover {
+    text-decoration: none;
+}
+
+#cvHover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#cvHover:hover::after {
+    transform: scaleX(1);
+}
+
+
+
 /* Header styling */
 header {
     padding: 20px 5%; /* Responsive padding */
@@ -28,7 +59,7 @@ a::after {
     position: absolute;
     left: 0;
     bottom: -2px;
-    width: 100%;
+    width: 90%;
     height: 2px;
     background-color: black;
     transform: scaleX(0);
@@ -44,7 +75,12 @@ a:hover::after {
 body {
     padding: 0 5%; /* Responsive padding */
     font-family: Arial, sans-serif;
+    /*background-image: url("../../public/pbg.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-size: cover;*/
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
